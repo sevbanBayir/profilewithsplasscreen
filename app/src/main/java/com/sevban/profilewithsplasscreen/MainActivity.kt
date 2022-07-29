@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.sevban.profilewithsplasscreen.composables.HeadCardView
 import com.sevban.profilewithsplasscreen.model.Portfolio
 import com.sevban.profilewithsplasscreen.ui.theme.ProfileWithSplasScreenTheme
@@ -17,6 +18,7 @@ import com.sevban.profilewithsplasscreen.ui.theme.ProfileWithSplasScreenTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         setContent {
             ProfileWithSplasScreenTheme {
 
